@@ -7,10 +7,9 @@ import DateInput from "./DateInput";
 import SelectInput from "./SelectInput";
 import CheckboxInput from "./CheckboxInput";
 import SubmitButton from "./SubmitButton";
-import { useNavigate, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Form = () => {
-    const history = useNavigate();
     const divForAutoScroll = useRef();
     const [formData, setFormData] = useState({});
     const [formSubmitted, setFormSubmitted] = useState(false);
@@ -36,7 +35,7 @@ const Form = () => {
       } catch (error) {
         console.error("Error adding document: ", error);
       }
-    //   history('/respuestas');
+   
     };
     
     return (
@@ -107,26 +106,3 @@ const Form = () => {
   };
   
   export default Form;
-
-
-
-
-
-
-
-//   Claro, puedo ayudarte a solucionar el problema de configuración de Tailwind. Aquí te dejo algunos pasos que podrían ayudar:
-
-// Verifica que hayas instalado correctamente Tailwind y sus dependencias. Para hacerlo, ejecuta npm install tailwindcss postcss autoprefixer en tu terminal.
-// Verifica que tengas un archivo de configuración de Tailwind llamado tailwind.config.js en la raíz de tu proyecto. Si no lo tienes, ejecuta npx tailwindcss init para generarlo.
-// Asegúrate de tener instalado postcss-cli y autoprefixer. Para instalarlos, ejecuta npm install postcss-cli autoprefixer.
-// Crea un archivo de configuración para PostCSS llamado postcss.config.js en la raíz de tu proyecto y agrega el siguiente código:
-// javascript
-// Copy code
-// module.exports = {
-//   plugins: [
-//     require('tailwindcss'),
-//     require('autoprefixer'),
-//   ],
-// };
-// Asegúrate de que tu archivo HTML o JSX esté enlazado correctamente con tu archivo CSS generado por Tailwind. Por ejemplo, si utilizas Create React App, el archivo se debe encontrar en src/index.css y debes importarlo en tu archivo index.js o App.js.
-// Si después de seguir estos pasos aún tienes problemas, por favor comparte el error específico que estás viendo en la consola para que pueda ayudarte mejor.
