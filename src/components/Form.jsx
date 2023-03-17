@@ -7,7 +7,7 @@ import DateInput from "./DateInput";
 import SelectInput from "./SelectInput";
 import CheckboxInput from "./CheckboxInput";
 import SubmitButton from "./SubmitButton";
-import { Link } from "react-router-dom";
+
 
 const Form = () => {
     const divForAutoScroll = useRef();
@@ -97,7 +97,6 @@ const Form = () => {
   <div className="fixed inset-0 flex items-center justify-center z-50 bg-blue-500 bg-opacity-50">
     <div className="bg-white rounded-lg p-4">
       <p className="mb-2">Respuestas enviadas</p>
-      <Link to="/respuestas" className="underline">Ver respuestas</Link>
     </div>
   </div>
 )}
