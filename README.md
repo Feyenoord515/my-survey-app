@@ -1,6 +1,5 @@
 my-survey-app
 
-
 Este proyecto es una aplicación web de encuestas, construida en React.js y utilizando una base de datos de Firebase para almacenar las respuestas de los usuarios.
 
 Funcionalidades.
